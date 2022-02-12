@@ -1,0 +1,59 @@
+.services {
+  margin: 50px 0;
+  .container {
+    .desc {
+      font-size: 25px;
+      text-align: center;
+      width: 65%;
+      margin: auto;
+      line-height: 1.7;
+      margin-bottom: 70px;
+      
+      @include preakpointes(mopile){
+        width: 90%;
+        text-align: left;
+        font-size: 19px;
+      } 
+      span {
+        color: #481ea7;
+      }
+    }
+    .services-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px;
+      a {
+        width: 30%;
+        background-color: white;
+        border-radius: 20px 0 20px 0;
+        transition: $transition;
+        box-shadow: 10px 10px 10px #EEE;
+        @include preakpointes(taplet){
+          width: 45%;
+        } 
+        @include preakpointes(mopile){
+          width: 80%;
+        } 
+        &:hover{
+          box-shadow: 0 0 10px 10px #DDD;
+          
+        }
+        .item {
+          width: 100%;
+          text-align: center;
+          padding: 20px;
+          position: relative;
+          
+          img {
+            margin-bottom: 25px;
+          }
+          .title {
+            font-size: 25px;
+            color: #481ea7;
+          }
+        }
+      }
+    }
+  }
+}

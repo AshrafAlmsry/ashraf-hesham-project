@@ -1,0 +1,217 @@
+.products {
+  background-image: url(../../../images/pattern/03.png);
+  background-size: cover;
+  margin: 50px 0;
+  z-index: 1;
+
+  .container {
+    .sircel {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #481ea7;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 40px;
+      width: fit-content;
+      margin: 20px auto;
+      color: black;
+      @include preakpointes(mopile){
+        width: 70%;
+        text-align: center;
+      }
+    }
+    .section-desc {
+      width: fit-content;
+      margin: auto;
+      font-size: 20px;
+      @include preakpointes(mopile){
+        width: 98%;
+        text-align: center;
+      }
+    }
+    .products-content {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      z-index: 2;
+      .item {
+        width: 30%;
+        text-align: center;
+        padding: 45px;
+        box-shadow: 0 0 10px 10px #eee;
+        position: relative;
+        @include preakpointes(taplet) {
+          width: 45%;
+        }
+        @include preakpointes(mopile) {
+          width: 90%;
+        }
+        
+        .item-title {
+          color: black;
+          font-size: 20px;
+          margin: 20px 0 15px;
+        }
+        .item-decs {
+          font-size: 18px;
+        }
+      }
+      .item1 {
+        border-radius: 76% 47% 33% 31%;
+        &::after {
+          transition: $transition;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #471ea757;
+          border-radius: inherit;
+          transform: scale(0, 0);
+        }
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+      .item2 {
+        border-radius: 29% 94% 59% 73%;
+        &::after {
+          transition: $transition;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #471ea757;
+          border-radius: inherit;
+          transform: scale(0, 0);
+        }
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+      .item3 {
+        border-radius: 26% 57% 65% 60%;
+        &::after {
+          transition: $transition;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #471ea757;
+          border-radius: inherit;
+          transform: scale(0, 0);
+        }
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+      .item4 {
+        border-radius: 89% 69% 77% 40%;
+        &::after {
+          transition: $transition;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #471ea757;
+          border-radius: inherit;
+          transform: scale(0, 0);
+        }
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+      .item5 {
+        border-radius: 26% 57% 65% 60%;
+        &::after {
+          transition: $transition;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #471ea757;
+          border-radius: inherit;
+          transform: scale(0, 0);
+        }
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+      .item6 {
+        border-radius: 76% 47% 33% 31%;
+        &::after {
+          transition: $transition;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #471ea757;
+          border-radius: inherit;
+          transform: scale(0, 0);
+        }
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+      .item7 {
+        border-radius: 28% 46% 59% 73%;
+        img{
+          @include preakpointes(mopile){
+            width: 70%;
+          }
+          @include preakpointes(taplet){
+            width: 70%;
+          }
+        }
+        &::after {
+          transition: $transition;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #471ea757;
+          border-radius: inherit;
+          transform: scale(0, 0);
+        }
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+      .item8 {
+        border-radius: 89% 69% 77% 40%;
+        &::after {
+          transition: $transition;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #471ea757;
+          border-radius: inherit;
+          transform: scale(0, 0);
+        }
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+}

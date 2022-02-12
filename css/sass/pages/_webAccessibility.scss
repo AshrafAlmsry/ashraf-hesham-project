@@ -1,0 +1,95 @@
+.info {
+  margin-top: 50px;
+  .container {
+    .info-content {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      .item {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @include preakpointes(taplet) {
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        @include preakpointes(mopile) {
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        .img-box {
+          width: 49%;
+          @include preakpointes(taplet) {
+            width: 90%;
+            margin: auto;
+          }
+          @include preakpointes(mopile) {
+            width: 90%;
+            margin: auto;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .data {
+          width: 50%;
+          @include preakpointes(taplet) {
+            width: 90%;
+            margin: auto;
+          }
+          @include preakpointes(mopile) {
+            width: 90%;
+            margin: auto;
+          }
+          .sircl {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #481ea7;
+            margin-bottom: 15px;
+          }
+          .title {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 20px;
+          }
+          .desc {
+            line-height: 1.5;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// abilities
+
+.abilities{
+  margin: 50px 0 ;
+  .container{    
+    .title{
+      color: black;
+      margin-bottom: 10px;
+    }
+    .decs{
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    ul{
+      margin: 15px 20px;
+
+      li{
+        font-size: 18px;
+      }
+    }
+    .title2{
+      color: black;
+      margin-bottom: 10px;
+    }
+    .desc2{
+      font-size: 18px;
+      line-height: 1.7;
+    }
+  }
+}

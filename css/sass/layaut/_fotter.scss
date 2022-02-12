@@ -1,0 +1,118 @@
+// footer
+
+.footer {
+  background-image: url(../../../images/pattern/03.png);
+  background-size: cover;
+  background-color: rgba($pink, 0.2);
+  margin-top: 100px;
+  img {
+    width: 100%;
+    height: 120px;
+  }
+  .container {
+    .footer-content {
+      padding: 30px;
+      display: flex;
+      opacity: 0.9;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 60px;
+      color: black;
+      .box1 {
+        width: 24%;
+        @include  preakpointes(taplet){
+          width: 50%;
+        }
+        @include  preakpointes(mopile){
+          width: 95%;
+        }
+        h3 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+        p {
+          line-height: 1.7;
+        }
+      }
+      .box2 {
+        @include  preakpointes(mopile){
+          width: 40%;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          li {
+          }
+        }
+      }
+      .box3 {
+        @include  preakpointes(mopile){
+          width: 30%;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          li {
+          }
+        }
+      }
+      .box4 {
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          text-transform: capitalize;
+          li {
+            span {
+              text-transform: lowercase;
+              color: #481ea7;
+            }
+          }
+          .social {
+            display: flex;
+            gap: 10px;
+            i {
+              font-size: 22px;
+              color: white;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              display: grid;
+              place-items: center;
+              transition: $transition;
+              &:hover {
+                transform: rotateY(360deg);
+              }
+            }
+            .fa-facebook-f {
+              background-color: #5d82d1;
+            }
+            .fa-twitter {
+              background-color: #40bff5;
+            }
+            .fa-youtube {
+              background-color: #ef4e41;
+            }
+            .fa-linkedin-in {
+              background-color: #238cc8;
+            }
+            .fa-instagram {
+              background-color: #548bb6;
+            }
+          }
+        }
+      }
+    }
+    p{
+      margin: auto;
+      width: fit-content;
+      padding-bottom: 30px;
+      // text-align: center;
+    }
+  }
+}

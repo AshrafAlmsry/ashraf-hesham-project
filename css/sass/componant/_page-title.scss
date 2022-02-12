@@ -1,0 +1,34 @@
+.page-title{
+  position: relative;
+  height: 500px;
+  padding-top: 100px;
+  background-image: url('../../../images/pattern/pngegg.png');
+  background-size: cover;
+  background-color: rgba($pink, .5);
+  width: 100%;
+  overflow: hidden;
+  @include  preakpointes(mopile){
+    height: 400px;
+  }
+  .container{
+   
+    .title{
+      font-size: 50px;
+      text-transform: capitalize;
+      color: black;
+      span{
+        color : #481ea7
+      }
+    }
+    .desc{
+      // color: white;
+      font-size: 18px;
+    }
+  }
+  img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+  }
+}

@@ -1,0 +1,91 @@
+.info {
+  margin-top: 50px;
+  .container {
+    .info-content {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      .item {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @include preakpointes(taplet) {
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        @include preakpointes(mopile) {
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        .img-box {
+          width: 49%;
+          @include preakpointes(taplet) {
+            width: 90%;
+            margin: auto;
+          }
+          @include preakpointes(mopile) {
+            width: 90%;
+            margin: auto;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .data {
+          width: 50%;
+          @include preakpointes(taplet) {
+            width: 90%;
+            margin: auto;
+          }
+          @include preakpointes(mopile) {
+            width: 90%;
+            margin: auto;
+          }
+          .sircl {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #481ea7;
+            margin-bottom: 15px;
+          }
+          .title {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 20px;
+          }
+          .desc {
+            line-height: 1.5;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// our work 
+
+.our-work{
+  width: 100%;
+  margin: 70px 0 50px ;
+  .container{
+    .title{
+      color: black;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .desc{
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.7;
+      // color: red;
+      
+    }
+    .sup-desc{
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.7;
+      margin-top: 20px;
+    }
+  }
+}

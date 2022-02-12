@@ -1,0 +1,179 @@
+.contact {
+  // background-color: aquamarine;
+  margin: 70px 0 ;
+  .container {
+    // background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    img {
+      width: 50%;
+      @include preakpointes(taplet){
+        width: 80%;
+      }
+      @include preakpointes(mopile){
+        width: 80%;
+      }
+    }
+    .contant-right {
+      // background-color: cadetblue;
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+      @include preakpointes(taplet){
+        width: 80%;
+      }
+      @include preakpointes(mopile){
+        width: 80%;
+      }
+      .sircl {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #481ea7;
+      }
+      .title{
+        margin : 15px 0 10px; 
+        color: black;
+        font-size: 40px;
+      }
+      .desc{
+        font-size: 18px;
+        border-bottom: 1px solid #AAA;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+      ul{
+        li{
+          margin-left: 20px;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+      }
+      .info{
+        // background-color: brown;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // gap: 10px;
+        input{
+          font-size: 18px;
+          padding : 10px  ;
+          width: 48%;
+          border: none;
+          border-bottom: 1px solid #AAA;
+          border-radius: 3px;
+          outline: none;
+          background-color: #EEE;
+          &:focus{
+            border: 2px solid #7250c2;
+            border-radius: 3px;
+          }
+        }
+      }
+      input{
+        font-size: 18px;
+          padding : 10px  ;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #AAA;
+          border-radius: 3px;
+          outline: none;
+          background-color: #EEE;
+          margin: 10px 0 ;
+          &:focus{
+            border: 2px solid #7250c2;
+            border-radius: 3px;
+          }
+      }
+      textarea{
+        font-size: 18px;
+          padding : 10px  ;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #AAA;
+          border-radius: 3px;
+          outline: none;
+          background-color: #EEE;
+          height: 100px;
+          &:focus{
+            border: 2px solid #7250c2;
+            border-radius: 3px;
+          }
+      }
+      button{
+        @extend %btn ; 
+        width: 150px;
+        margin-top: 20px;
+        background: linear-gradient(90deg, #481ea7 0%, #f44d85 80%);
+        color : white ; 
+      }
+    }
+  }
+}
+// comp data 
+
+.comp-data{
+  position: sticky;
+  margin : 80px 0 70px ;
+  overflow: hidden;
+  .container{
+    // background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ; 
+    gap: 25px;
+
+    .item{
+      background-color: white;
+      width: 26%;
+      padding : 20px ;
+      display: flex;
+      flex-direction: column;
+      justify-content:center ; 
+      align-items: center;
+      gap: 15px;
+      border-radius: 5px;
+      border-bottom: 3px solid #481ea7;
+      box-shadow: 0 0 5px 5px #EEE;
+      @include preakpointes(mopile){
+        width: 70%;
+      }
+      .title{
+        color: black;
+        text-transform: uppercase;
+      }
+    }
+    .item1{
+      @include preakpointes(taplet){
+        width: 80%;
+      }
+    }
+    .item2{
+      @include preakpointes(taplet){
+        width: 40%;
+      }
+    }
+    .item3{
+      @include preakpointes(taplet){
+        width: 40%;
+      }
+    }
+  }
+}
+
+// googel map 
+
+.parent-map{
+  width: 100%;
+  margin-top: -100px;
+  overflow: hidden;
+  @include preakpointes(mopile){
+    margin-top: 50px;
+  }
+  .map{
+    width: 100%;
+  }
+  
+}

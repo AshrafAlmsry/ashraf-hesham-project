@@ -1,0 +1,219 @@
+// info
+.info {
+  margin-top: 50px;
+  .container {
+    .info-content {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        @include preakpointes(taplet) {
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        @include preakpointes(mopile) {
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        .img-box {
+          width: 49%;
+          @include preakpointes(taplet) {
+            width: 90%;
+            margin: auto;
+          }
+          @include preakpointes(mopile) {
+            width: 90%;
+            margin: auto;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .data {
+          width: 50%;
+          @include preakpointes(taplet) {
+            width: 90%;
+            margin: auto;
+          }
+          @include preakpointes(mopile) {
+            width: 90%;
+            margin: auto;
+          }
+          .sircl {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #481ea7;
+            margin-bottom: 15px;
+          }
+          .title {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 20px;
+          }
+          .desc {
+            line-height: 1.5;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// master
+
+.start {
+  margin-top: 60px;
+  .container {
+    .start-content {
+      text-align: center;
+      .sup-title {
+        text-transform: uppercase;
+        color: black;
+        font-size: 19px;
+        margin-bottom: 25px;
+      }
+      .title {
+        text-align: center;
+        font-size: 35px;
+        color: black;
+        @include preakpointes(mopile) {
+          font-size: 20px;
+        }
+      }
+      .box-item {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        .item {
+          width: 30%;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          @include preakpointes(taplet) {
+            width: 40%;
+          }
+          @include preakpointes(mopile) {
+            width: 80%;
+          }
+          .number {
+            margin-bottom: 28px;
+            background-color: #eee;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: #481ea7;
+            font-weight: bold;
+            position: relative;
+            box-shadow: 0 2px 20px 2px aquamarine;
+            &::after {
+              position: absolute;
+              content: "";
+              width: 40px;
+              height: 40px;
+              top: -35px;
+              left: -35px;
+              background-color: aquamarine;
+              border-radius: 50%;
+              opacity: 0.5;
+            }
+          }
+          .item-title {
+            font-size: 20px;
+          }
+          .item-decs {
+            font-size: 16px;
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+  }
+}
+// more
+
+.more {
+  margin-top: 50px;
+  .title {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 15px;
+    background-color: white;
+    text-transform: capitalize;
+    color: #481ea7;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #aaa;
+    margin-bottom: 35px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    .item1 {
+      width: 45%;
+      border-radius: 5px;
+      padding: 20px;
+      padding-left: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      border: 3px inset #481ea7;
+      border-radius: 20px 0 20px 0;
+      background-image: url(../../../images/pattern/03.png);
+      background-size: cover;
+      box-shadow: 10px 10px 10px #aaa;
+      @include preakpointes(taplet) {
+        width: 80%;
+      }
+      @include preakpointes(mopile) {
+        width: 90%;
+      }
+      &::after {
+        border-radius: 20px 0 20px 0;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(#481ea7, 0.2);
+        z-index: -1;
+        transform: scale(0, 0);
+        transition: $transition;
+      }
+      &:hover::after {
+        transform: scale(1, 1);
+      }
+      p {
+        color: #481ea7;
+        font-size: 18px;
+        position: absolute;
+        left: 20px;
+        font-weight: bold;
+      }
+      ol {
+        margin-top: 40px;
+        @include preakpointes(mopile) {
+          margin-top: 60px;
+        }
+        li {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
